@@ -5,17 +5,18 @@ require_once 'config.php';
 if (isset($_SESSION['usuario_id'])) {
     header('Location: index.php');
     exit;
-
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Sistema Financeiro</title>
 </head>
+
 <body>
     <h1>Login - Sistema Financeiro</h1>
     <form action="autenticar.php" method="post">
@@ -34,4 +35,5 @@ if (isset($_SESSION['usuario_id'])) {
 
     <p>Não tem conta? <a href="registro.php">Cadastre-se aqui.</a></p>
 </body>
+
 </html>
